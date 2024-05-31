@@ -27,7 +27,7 @@ const ContextProvider=(props)=>{
         setLoading(true);
         setShowResult(true);
         let response;
-        if(prompt !==undefined)
+        if(prompt !== undefined)
             {
                response=await run(prompt);
                setRecentPrompt(prompt)

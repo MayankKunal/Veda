@@ -13,8 +13,10 @@ import {
     HarmCategory,
     HarmBlockThreshold,
   } from "@google/generative-ai"
-  
-  const apiKey = "AIzaSyAw1N8918PA--Ilrs9wVOQtFbd8-JTxXpg"
+  // const BASE_URL=process.env.REACT_APP_BASE_URL
+  // const BASE_URL=process.env.
+  const apiKey = import.meta.env.VITE_API_KEY;
+  console.log(apiKey);
   const genAI = new GoogleGenerativeAI(apiKey);
   
   const model = genAI.getGenerativeModel({
